@@ -1,5 +1,8 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+import {
+  BrowserRouter as Link
+} from "react-router-dom";
 import './App.css';
 import Joynul from './Components/Joynul/Joynul';
 import Navbar from './Components/Navbar/Navbar';
@@ -20,6 +23,7 @@ function App() {
         </ul>
       </nav>
       <div className="group-images">
+      <Link to="/Joynul">Minhaj</Link>
       <img alt="Nayeem" src={Nayeem}/>
       <img alt="Sajon" src={Sajon}/>
       <img alt="Joynul" src={JHjoy}/>
