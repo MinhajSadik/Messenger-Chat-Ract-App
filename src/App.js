@@ -1,36 +1,41 @@
-/* eslint-disable jsx-a11y/no-distracting-elements */
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+import React from "react";
 import {
-  BrowserRouter as Link
-} from 'react-router-dom';
-import './App.css';
-import Joynul from './Components/Joynul/Joynul';
-import JHjoy from './images-videos/joynul.jpg';
-import Nayeem from './images-videos/nayeem.jpg';
-import Sajon from './images-videos/sajon.jpg';
+  BrowserRouter as Router, Link, Route, Switch
+} from "react-router-dom";
+import About from "./Components/About/About";
+import Dashboard from "./Components/Dashboard/Dashboard";
+import Home from "./Components/Home/Home";
+
 
 function App() {
-  return (
-    <div>
-      <nav>
+  return (<div>
+    <Router>
+      <div>
         <ul>
-          <li>Sajon</li>
-          <li>Nayeem</li>
-          <li>Joynul</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/dashboard">Dashboard</Link>
+          </li>
         </ul>
-      </nav>
-      <div className="group-images">
-      <Link className="nav-link" to="/joynul">Minhaj</Link>
-      <img alt="Nayeem" src={Nayeem}/>
-      <img alt="Sajon" src={Sajon}/>
-      <img alt="Joynul" src={JHjoy}/>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
+          </Route>
+        </Switch>
       </div>
-    <MessengerCustomerChat
-    pageId="830505353752858"
-    appId="1041336330018020"/>
-    <Joynul/>
-    </div>
-  );
+    </Router>
+  </div>);
 }
 
-export default App;
+export default App();
