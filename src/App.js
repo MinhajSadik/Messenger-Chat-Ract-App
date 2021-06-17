@@ -35,7 +35,8 @@ function App() {
         </Switch>
       </div>
     </Router>
+    
   </div>);
 }
 
-export default App();
+export default App;
