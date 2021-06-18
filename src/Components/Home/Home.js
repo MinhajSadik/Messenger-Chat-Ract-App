@@ -12,7 +12,7 @@ const Home = () => {
     const [darkMode, setDarkMode] = useState(false);
   return (
     <div>
-        <ul>
+        {/* <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -22,7 +22,7 @@ const Home = () => {
           <li>
             <Link to="/dashboard">Dashboard</Link>
           </li>
-        </ul>
+        </ul> */}
         
       <div className={darkMode ? "dark-mode" : "light-mode"}>
         <div className="container">
@@ -49,12 +49,13 @@ const Home = () => {
         <img alt="athikVai" src={athikVai} />
       </div>
 
+
+
+    </div>
       <MessengerCustomerChat
-        pageId="830505353752858"
-        appId="1041336330018020"
-      />
+            pageId="830505353752858"
+            appId="1041336330018020"/>
       <MessengerCustomerChat />
-      </div>
     </div>
   );
 };
