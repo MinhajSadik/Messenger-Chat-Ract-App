@@ -24,7 +24,7 @@ const Home = () => {
           </li>
         </ul> */}
         
-      <div className={darkMode ? "dark-mode" : "light-mode"}>
+    <div className={darkMode ? "dark-mode" : "light-mode"}>
         <div className="container">
           <span style={{ color: darkMode ? "grey" : "black" }}>☀︎</span>
           <div className="switch-checkbox">
@@ -39,7 +39,7 @@ const Home = () => {
         <h1>Birthday WebSite & Software</h1>
           {/* <h1>Cool its {darkMode ? "Dark" : "Light"} Mode </h1> */}
         </div>
-        </div>
+    </div>
 
       <div className="perosn-joynul">
         <Link to="/joynul">
@@ -64,15 +64,14 @@ const Home = () => {
         <img alt="athikVai" src={athikVai} />
         </Link>
       </div>
-      
-
     </div>
+
       <MessengerCustomerChat
             pageId="830505353752858"
             appId="1041336330018020"/>
       <MessengerCustomerChat />
-    </div>
-  );
+
+    </div>);
 };
 
 export default Home;

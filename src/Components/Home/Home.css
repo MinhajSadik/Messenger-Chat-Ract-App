@@ -10,10 +10,6 @@ body {
   justify-content: center;
   padding: 5px;
 }
-.person {
-  border: 10px solid #282c34;
-}
-
 nav > ul > li {
   list-style: none;
   font-weight: bold;
