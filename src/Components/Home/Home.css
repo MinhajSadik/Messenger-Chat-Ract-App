@@ -7,8 +7,13 @@ body {
 }
 .group-images {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  padding: 5px;
 }
+.person {
+  border: 10px solid #282c34;
+}
+
 nav > ul > li {
   list-style: none;
   font-weight: bold;
@@ -21,18 +26,18 @@ nav > ul > li {
   bottom: 30px;
 }
 img {
-  width: 100px;
+  width: 50px;
   border-radius: 100%;
+}
+img::first-child {
+  height: 70px;
+  width: 70px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   img {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {

@@ -3,8 +3,8 @@ import MessengerCustomerChat from "react-messenger-customer-chat";
 import { Link } from "react-router-dom";
 import athikVai from "../../images-videos/athiq-vai.jpg";
 import JHjoy from "../../images-videos/joynul.jpg";
-import Nayeem from "../../images-videos/nayeem.jpg";
-import Sajon from "../../images-videos/sajon.jpg";
+import NayeeM from "../../images-videos/nayeem.jpg";
+import SajoN from "../../images-videos/sajon.jpg";
 import "./Home.css";
 
 
@@ -34,22 +34,37 @@ const Home = () => {
             </label>
           </div>
           <span style={{ color: darkMode ? "#c96dfd" : "grey" }}>☽</span>
-        </div>
+        
         <div>
-          <h1>Cool its {darkMode ? "Dark" : "Light"} Mode </h1>
+        <h1>Birthday WebSite & Software</h1>
+          {/* <h1>Cool its {darkMode ? "Dark" : "Light"} Mode </h1> */}
         </div>
-      
+        </div>
 
-      <div className="group-images">
+      <div className="perosn-joynul">
         <Link to="/joynul">
           <img alt="Joynul" src={JHjoy} />
         </Link>
-        <img alt="Nayeem" src={Nayeem} />
-        <img alt="Sajon" src={Sajon} />
-        <img alt="athikVai" src={athikVai} />
       </div>
 
+      <div className="person-nayeem">
+        <Link to="/nayeem">
+        <img alt="Nayeem" src={NayeeM} />
+        </Link>
+      </div>
 
+      <div className="perosn-sajon">
+        <Link to="/sajon">
+        <img alt="Sajon" src={SajoN} />
+        </Link>
+      </div>
+
+      <div className="person-athikVai">
+        <Link to="/athik">
+        <img alt="athikVai" src={athikVai} />
+        </Link>
+      </div>
+      
 
     </div>
       <MessengerCustomerChat

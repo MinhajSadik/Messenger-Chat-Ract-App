@@ -1,11 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import JHjoy from '../../images-videos/joynul.jpg';
 
 const Joynul = () => {
-    return (
+    return (<>
         <div>
-            <h1>Joynul</h1>
-        </div>
-    );
+        <Link to="/joynul">
+          <img alt="Joynul" src={JHjoy} />
+        </Link>
+      </div>
+
+    </>);
 };
 
 export default Joynul;
