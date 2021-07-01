@@ -5,14 +5,11 @@ import './Sajon.css';
 
 
 const Sajon = () => {
-    return (<>
-        <div>
+    return (<div>
             <Link to="/sajon">
                 <img alt="Sajon" src={SajoN} />
             </Link>
-      </div>
-
-    </>);
+      </div>);
 };
 
 export default Sajon;

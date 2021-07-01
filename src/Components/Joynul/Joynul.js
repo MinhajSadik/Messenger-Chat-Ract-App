@@ -3,14 +3,11 @@ import { Link } from 'react-router-dom';
 import JHjoy from '../../images-videos/joynul.jpg';
 
 const Joynul = () => {
-    return (<>
-        <div>
+    return (<div>
         <Link to="/joynul">
           <img alt="Joynul" src={JHjoy} />
         </Link>
-      </div>
-
-    </>);
+      </div>);
 };
 
 export default Joynul;
