@@ -20,7 +20,7 @@ const About = () => {
         const textMinute = Math.floor(( gap % hour) / minute);
         const textSeconds = Math.floor(( gap % minute) / seconds);
     
-        document.querySelector(".day").innerText = textDay.value;
+        document.querySelector(".day").innerText = textDay;
         document.querySelector(".hour").innerText = textHour;
         document.querySelector(".minute").innerText = textMinute;
         document.querySelector(".second").innerText = textSeconds;
@@ -31,20 +31,16 @@ const About = () => {
             <div>
             <div className="countdown">
                 <div className="container-day">
-                    <h3 className="day">Time</h3>
-                    <h3>Day</h3>
+                    <h3 className="day">Day</h3>
                 </div>
                 <div className="container-hour">
-                    <h3 className="hour">Time</h3>
-                    <h3>Hour</h3>
+                    <h3 className="hour">Hour</h3>
                 </div>
                 <div className="container-minute">
-                    <h3 className="minute">Time</h3>
-                    <h3>Minute</h3>
+                    <h3 className="minute">Minute</h3>
                 </div>
                 <div className="container-second">
-                    <h3 className="second">Time</h3>
-                    <h3>Second</h3>
+                    <h3 className="second">Second</h3>
                 </div>
             </div>
         </div>
