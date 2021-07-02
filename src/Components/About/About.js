@@ -48,7 +48,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-        <img src="" alt="" />
+        <img src="" alt="dosen't imgage" />
     </section>
 
     );
