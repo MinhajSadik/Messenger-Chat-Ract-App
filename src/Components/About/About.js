@@ -20,7 +20,7 @@ const About = () => {
         const textMinute = Math.floor(( gap % hour) / minute);
         const textSeconds = Math.floor(( gap % minute) / seconds);
     
-        document.querySelector(".day").innerText = textDay.value;
+        document.querySelector(".day").innerText = textDay;
         document.querySelector(".hour").innerText = textHour;
         document.querySelector(".minute").innerText = textMinute;
         document.querySelector(".second").innerText = textSeconds;
