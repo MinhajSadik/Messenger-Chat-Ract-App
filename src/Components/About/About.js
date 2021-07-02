@@ -1,34 +1,31 @@
 import React from 'react';
 import './About.css';
 
-const countdown = () => {
-    const countDate = new Date('July 1, 2021 6:34:10').getTime();
-    const now = new Date().getTime();
-    const gap = countDate - now;
-
-    //how to fuck does time work 
-    const seconds =  1000;
-    const minute = seconds * 60;
-    const hour = minute * 60;
-    const day = hour * 24;
-
-    // calculate the shit 
-    const textDay = Math.floor(gap / day);
-    const textHour = Math.floor(( gap % day) / hour);
-    const textMinute = Math.floor(( gap % hour) / minute);
-    const textSeconds = Math.floor(( gap % minute) / seconds);
-
-    document.querySelector(".day").innerHTML = textDay;
-    document.querySelector(".hour").innerTEXT = textHour;
-    document.querySelector(".minute").innerText = textMinute;
-    document.querySelector(".second").innerText = textSeconds;
-};
-countdown();
 
 const About = () => {
+    
+        const countDate = new Date('July 1, 2021 6:34:10').getTime();
+        const now = new Date().getTime();
+        const gap = countDate - now;
+    
+        //how to fuck does time work 
+        const seconds =  1000;
+        const minute = seconds * 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+    
+        // calculate the shit 
+        const textDay = Math.floor(gap / day);
+        const textHour = Math.floor(( gap % day) / hour);
+        const textMinute = Math.floor(( gap % hour) / minute);
+        const textSeconds = Math.floor(( gap % minute) / seconds);
+    
+            document.querySelector(".day").innerText = textDay;
+            document.querySelector(".hour").innerText = textHour;
+            document.querySelector(".minute").innerText = textMinute;
+            document.querySelector(".second").innerText = textSeconds;
     return (
         <section className="coming-soon">
-            
             <div>
             <div className="countdown">
                 <div className="container-day">
