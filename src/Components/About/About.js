@@ -3,7 +3,7 @@ import './About.css';
 
 
 const About = () => {
-    
+    const countdown = () => {
         const countDate = new Date('July 1, 2021 6:34:10').getTime();
         const now = new Date().getTime();
         const gap = countDate - now;
@@ -20,10 +20,12 @@ const About = () => {
         const textMinute = Math.floor(( gap % hour) / minute);
         const textSeconds = Math.floor(( gap % minute) / seconds);
     
-            document.querySelector(".day").innerText = textDay;
-            document.querySelector(".hour").innerText = textHour;
-            document.querySelector(".minute").innerText = textMinute;
-            document.querySelector(".second").innerText = textSeconds;
+        document.querySelector(".day").innerText = textDay.value;
+        document.querySelector(".hour").innerText = textHour;
+        document.querySelector(".minute").innerText = textMinute;
+        document.querySelector(".second").innerText = textSeconds;
+    };
+    countdown();
     return (
         <section className="coming-soon">
             <div>
